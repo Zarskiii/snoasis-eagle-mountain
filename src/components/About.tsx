@@ -14,7 +14,7 @@ const About = () => {
             <div className="mx-auto max-w-xs rounded-lg bg-white p-6 shadow-xl ring-1 ring-tiki-blue/10 sm:max-w-sm">
               <a href={business.yelpUrl} target="_blank" rel="noopener noreferrer" aria-label="Open Snoasis on Yelp">
                 <img
-                  src="/brand/snoasis-mark-circle.png"
+                  src="/brand/snoasis-logo-square.jpg"
                   alt="Snoasis world's greatest shaved ice logo"
                   className="block aspect-square h-auto w-full object-contain"
                 />
