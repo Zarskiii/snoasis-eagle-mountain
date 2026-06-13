@@ -9,7 +9,6 @@ import NotFound from "./pages/NotFound";
 import CateringPage from "./pages/CateringPage";
 import MenuPage from "./pages/MenuPage";
 import ReviewsPage from "./pages/ReviewsPage";
-import ChatBot from "./components/ChatBot";
 
 const queryClient = new QueryClient();
 
@@ -49,7 +48,6 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </HashRouter>
-        <ChatBot />
       </TooltipProvider>
     </QueryClientProvider>
   );

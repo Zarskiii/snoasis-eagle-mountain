@@ -47,9 +47,9 @@ const Navbar = () => {
               {business.phone}
             </a>
             <Link to="/catering?package=Custom%20Bid#contact">
-              <Button className="gap-2 rounded-md bg-tiki-pink text-white hover:bg-tiki-pink/90">
+              <Button className="request-catering-button gap-2 rounded-md bg-tiki-pink text-white hover:bg-tiki-pink/90">
                 <CalendarDays className="h-4 w-4" />
-                Request Bid
+                Request Catering
               </Button>
             </Link>
           </div>
@@ -102,9 +102,9 @@ const Navbar = () => {
                 {business.phone}
               </a>
               <Link to="/catering?package=Custom%20Bid#contact" onClick={() => setIsMenuOpen(false)}>
-                <Button className="mx-4 gap-2 rounded-md bg-tiki-pink text-white hover:bg-tiki-pink/90">
+                <Button className="request-catering-button mx-4 gap-2 rounded-md bg-tiki-pink text-white hover:bg-tiki-pink/90">
                   <CalendarDays className="h-4 w-4" />
-                  Request Bid
+                  Request Catering
                 </Button>
               </Link>
             </div>

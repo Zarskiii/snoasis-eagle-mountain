@@ -99,3 +99,39 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes request-catering-jiggle {
+  0%, 86%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  89% {
+    transform: rotate(-1.8deg) scale(1.02);
+  }
+
+  92% {
+    transform: rotate(1.8deg) scale(1.02);
+  }
+
+  95% {
+    transform: rotate(-1deg) scale(1.01);
+  }
+
+  98% {
+    transform: rotate(1deg) scale(1.01);
+  }
+}
+
+@layer utilities {
+  .request-catering-button {
+    animation: request-catering-jiggle 4.8s ease-in-out infinite;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .request-catering-button {
+      animation: none;
+    }
+  }
+}
