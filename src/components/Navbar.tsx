@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex min-w-0 items-center gap-3" aria-label={`${business.name} home`}>
             <img
-              src="/brand/snoasis-mark-circle.png"
+              src="/brand/snoasis-mark.png"
               alt=""
               className="h-12 w-12 shrink-0 rounded-full bg-white shadow-sm"
               aria-hidden="true"
