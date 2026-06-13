@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[calc(100svh-2rem)] overflow-hidden pt-20 text-white md:min-h-[620px]">
+    <section className="relative overflow-hidden pt-20 text-white md:min-h-[620px]">
       <div className="absolute inset-0 z-0">
         <img
           src="/images/o (1).jpg"
@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
       </div>
 
-      <div className="container relative z-10 mx-auto px-4 pb-16 pt-16 md:pb-16 md:pt-16">
+      <div className="container relative z-10 mx-auto px-4 pb-10 pt-10 sm:pb-12 sm:pt-12 md:pb-16 md:pt-16">
         <div className="max-w-3xl">
           <h1 className="mb-5 max-w-3xl text-5xl font-black leading-[0.98] sm:text-6xl md:text-7xl">
             <span className="block">Snoasis</span>
