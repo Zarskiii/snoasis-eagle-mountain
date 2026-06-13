@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { CalendarDays, Menu, Phone, X } from "lucide-react";
+import { BriefcaseBusiness, CalendarDays, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { business } from "@/lib/business";
 
@@ -42,10 +42,12 @@ const Navbar = () => {
             <Link to="/reviews" className="font-medium text-tiki-dark hover:text-tiki-blue">Reviews</Link>
             <Link to="/catering" className="font-medium text-tiki-dark hover:text-tiki-blue">Catering</Link>
             <Link to="/catering#contact" className="font-medium text-tiki-dark hover:text-tiki-blue">Contact</Link>
-            <a href={business.phoneHref} className="inline-flex items-center gap-2 font-semibold text-tiki-dark hover:text-tiki-blue">
-              <Phone className="h-4 w-4" />
-              {business.phone}
-            </a>
+            <Link to="/jobs">
+              <Button variant="outline" className="gap-2 rounded-md border-tiki-blue text-tiki-dark hover:bg-tiki-blue hover:text-white">
+                <BriefcaseBusiness className="h-4 w-4" />
+                Work Here
+              </Button>
+            </Link>
             <Link to="/catering?package=Custom%20Bid#contact">
               <Button className="request-catering-button gap-2 rounded-md bg-tiki-pink text-white hover:bg-tiki-pink/90">
                 <CalendarDays className="h-4 w-4" />
@@ -93,14 +95,12 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <a
-                href={business.phoneHref}
-                className="flex items-center gap-2 px-4 py-2 font-medium text-tiki-dark hover:text-tiki-blue"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <Phone className="h-4 w-4" />
-                {business.phone}
-              </a>
+              <Link to="/jobs" onClick={() => setIsMenuOpen(false)}>
+                <Button variant="outline" className="mx-4 gap-2 rounded-md border-tiki-blue text-tiki-dark hover:bg-tiki-blue hover:text-white">
+                  <BriefcaseBusiness className="h-4 w-4" />
+                  Work Here
+                </Button>
+              </Link>
               <Link to="/catering?package=Custom%20Bid#contact" onClick={() => setIsMenuOpen(false)}>
                 <Button className="request-catering-button mx-4 gap-2 rounded-md bg-tiki-pink text-white hover:bg-tiki-pink/90">
                   <CalendarDays className="h-4 w-4" />

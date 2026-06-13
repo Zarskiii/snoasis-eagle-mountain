@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import CateringPage from "./pages/CateringPage";
 import MenuPage from "./pages/MenuPage";
 import ReviewsPage from "./pages/ReviewsPage";
+import JobsPage from "./pages/JobsPage";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,7 @@ const App = () => {
             <Route path="/menu" element={<MenuPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/catering" element={<CateringPage />} />
+            <Route path="/jobs" element={<JobsPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </HashRouter>
