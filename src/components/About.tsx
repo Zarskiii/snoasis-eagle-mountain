@@ -11,11 +11,11 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="relative">
-            <div className="mx-auto max-w-xl overflow-hidden rounded-lg shadow-xl ring-1 ring-tiki-blue/10 lg:max-w-none">
+            <div className="mx-auto max-w-2xl rounded-lg shadow-xl ring-1 ring-tiki-blue/10 lg:max-w-[720px]">
               <img
                 src="/brand/snoasis-bright-logo-wide.png"
                 alt="Snoasis world's greatest shaved ice logo"
-                className="aspect-[765/264] w-full object-cover"
+                className="block h-auto w-full rounded-lg object-fill [transform:scaleX(1.06)]"
               />
             </div>
           </div>
