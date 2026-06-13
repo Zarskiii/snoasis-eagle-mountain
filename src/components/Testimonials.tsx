@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { TikiButton } from "@/components/ui/tiki-button";
 import { business, publicReviewHighlights, reviewStats } from "@/lib/business";
-import { ExternalLink, Facebook, MapPinned, MessageSquare, Star } from "lucide-react";
+import { ExternalLink, Facebook, Gift, MapPinned, MessageSquare, Star } from "lucide-react";
 
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -47,6 +47,18 @@ const Testimonials = () => {
               <p className="mt-3 text-sm text-gray-700">
                 Frequent mentions of cream add-ons and friendly service.
               </p>
+
+              <div className="mt-4 rounded-lg border border-tiki-yellow/60 bg-tiki-yellow/20 p-4">
+                <div className="flex items-start gap-3">
+                  <Gift className="mt-0.5 h-5 w-5 shrink-0 text-tiki-pink" />
+                  <div>
+                    <p className="font-black text-tiki-dark">Enjoy your treat?</p>
+                    <p className="mt-1 text-sm leading-5 text-gray-700">
+                      Ask the window attendant about a Sweet Milk or Cream topping thank-you, and feel free to share an honest review online.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
               <div className="mt-5 flex flex-wrap gap-3">
                 <TikiButton asChild variant="outline" size="sm" className="gap-2">
