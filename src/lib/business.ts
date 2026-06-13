@@ -10,7 +10,7 @@ export const business = {
   mapUrl: "https://maps.app.goo.gl/DJWZDMWfGqufqpmu7",
   facebookUrl: "https://www.facebook.com/SnoasisEagleMtn/",
   facebookPostUrl: "https://www.facebook.com/photo/?fbid=1281566474077473&set=a.1281568800743907",
-  yelpUrl: "https://www.yelp.com/biz/snoasis-eagle-mountain-2",
+  yelpUrl: "https://m.yelp.com/biz/snoasis-eagle-mountain-3",
   grubbioUrl: "https://snoasis.grubbio.com/",
   restaurantjiUrl: "https://www.restaurantji.com/ut/eagle-mountain/snoasis-/",
   serviceArea: "Eagle Mountain, Saratoga Springs, Lehi, Draper, and Utah County",

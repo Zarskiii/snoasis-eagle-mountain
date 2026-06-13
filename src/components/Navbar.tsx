@@ -40,8 +40,6 @@ const Navbar = () => {
             <Link to="/#about" className="font-medium text-tiki-dark hover:text-tiki-blue">About</Link>
             <Link to="/menu" className="font-medium text-tiki-dark hover:text-tiki-blue">Menu</Link>
             <Link to="/reviews" className="font-medium text-tiki-dark hover:text-tiki-blue">Reviews</Link>
-            <Link to="/catering" className="font-medium text-tiki-dark hover:text-tiki-blue">Catering</Link>
-            <Link to="/catering#contact" className="font-medium text-tiki-dark hover:text-tiki-blue">Contact</Link>
             <Link to="/jobs">
               <Button variant="outline" className="gap-2 rounded-md border-tiki-blue text-tiki-dark hover:bg-tiki-blue hover:text-white">
                 <BriefcaseBusiness className="h-4 w-4" />
@@ -80,20 +78,6 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Reviews
-              </Link>
-              <Link 
-                to="/catering" 
-                className="font-medium text-tiki-dark hover:text-tiki-blue py-2 px-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Catering
-              </Link>
-              <Link 
-                to="/catering#contact" 
-                className="font-medium text-tiki-dark hover:text-tiki-blue py-2 px-4"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
               </Link>
               <Link to="/jobs" onClick={() => setIsMenuOpen(false)}>
                 <Button variant="outline" className="mx-4 gap-2 rounded-md border-tiki-blue text-tiki-dark hover:bg-tiki-blue hover:text-white">
