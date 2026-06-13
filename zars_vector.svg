@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="80px" viewBox="0 0 240 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2389DA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06D6A0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF3366;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF9500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sunsetGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF3366;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0.5" dy="0.5" stdDeviation="0.5" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Main background -->
+  <path d="M10,15 C10,10 15,10 20,10 L220,10 C225,10 230,10 230,15 C230,25 230,35 220,45 C215,50 220,65 220,70 L20,70 C20,65 25,50 20,45 C10,35 10,25 10,15 Z" fill="#FFFFFF" stroke="#2389DA" stroke-width="1.5"/>
+  
+  <!-- Tropical sunset background -->
+  <path d="M20,15 L220,15 L220,40 C180,35 180,55 120,55 C60,55 60,35 20,40 L20,15 Z" fill="url(#sunsetGradient)" opacity="0.7"/>
+  
+  <!-- Palm tree silhouette -->
+  <g transform="translate(185,12)">
+    <!-- Trunk -->
+    <path d="M10,43 C10,43 11,25 8,23 C5,21 12,24 14,28 C16,32 15,43 15,43 Z" fill="#51341C"/>
+    
+    <!-- Leaves -->
+    <path d="M10,23 C5,20 0,15 -2,10 C2,13 5,18 8,23 Z" fill="#06D6A0"/>
+    <path d="M10,23 C10,18 10,10 13,5 C13,12 12,18 8,23 Z" fill="#06D6A0"/>
+    <path d="M10,23 C15,20 23,17 28,15 C22,18 16,21 12,23 Z" fill="#06D6A0"/>
+    <path d="M8,25 C3,25 -5,28 -8,30 C0,28 5,26 8,25 Z" fill="#06D6A0"/>
+    <path d="M14,25 C19,25 27,28 30,30 C22,28 17,26 14,25 Z" fill="#06D6A0"/>
+  </g>
+  
+  <!-- ZAR'S Text -->
+  <g transform="translate(20,18)">
+    <!-- Z -->
+    <path d="M0,10 L35,10 L5,40 L35,40 L35,50 L0,50 L30,20 L0,20 Z" fill="url(#blueGradient)"/>
+    
+    <!-- A -->
+    <path d="M40,10 L55,50 L45,50 L43,45 L32,45 L30,50 L20,50 L35,10 Z M37.5,20 L34,35 L41,35 Z" fill="url(#pinkGradient)"/>
+    
+    <!-- R -->
+    <path d="M60,10 L85,10 C90,10 95,15 95,20 C95,25 90,30 85,30 L70,30 L70,50 L60,50 Z M70,20 L70,25 L80,25 C82,25 82,20 80,20 Z" fill="url(#blueGradient)"/>
+    
+    <!-- ' -->
+    <path d="M100,10 C105,10 105,20 100,20 Z" fill="url(#pinkGradient)"/>
+    
+    <!-- S -->
+    <path d="M110,10 L130,10 C135,10 135,15 135,20 C135,25 130,25 125,25 L120,25 C118,25 115,25 115,27.5 C115,30 118,30 120,30 L130,30 C135,30 135,35 135,40 C135,45 130,50 125,50 L110,50 C105,50 105,45 105,40 L115,40 C115,42 118,40 120,40 L125,40 C127,40 125,35 120,35 L115,35 C110,35 105,30 105,25 C105,15 110,10 110,10 Z" fill="url(#pinkGradient)"/>
+  </g>
+  
+  <!-- TIKI SHACK text -->
+  <g transform="translate(120,65)">
+    <rect x="-90" y="-5" width="180" height="20" rx="5" ry="5" fill="#073B4C"/>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">
+      TIKI SHACK
+    </text>
+  </g>
+  
+  <!-- Hibiscus flower -->
+  <g transform="translate(35,30)">
+    <circle cx="0" cy="0" r="5" fill="#FF3366"/>
+    <path d="M0,-5 C2,-8 5,-10 7,-8 C9,-6 6,-2 4,-2 C2,-2 -2,-2 -4,-2 C-6,-2 -9,-6 -7,-8 C-5,-10 -2,-8 0,-5 Z" fill="#FF5E8F"/>
+    <path d="M5,-2 C8,-2 12,-1 13,2 C14,5 10,6 8,4 C6,2 6,-2 4,-4 C2,-6 5,-6 8,-4 C11,-2 10,3 7,5 C4,7 0,5 0,3 C0,1 2,-2 5,-2 Z" fill="#FF5E8F"/>
+    <path d="M-5,-2 C-8,-2 -12,-1 -13,2 C-14,5 -10,6 -8,4 C-6,2 -6,-2 -4,-4 C-2,-6 -5,-6 -8,-4 C-11,-2 -10,3 -7,5 C-4,7 0,5 0,3 C0,1 -2,-2 -5,-2 Z" fill="#FF5E8F"/>
+    <path d="M0,5 C-2,8 -5,10 -7,8 C-9,6 -6,2 -4,2 C-2,2 2,2 4,2 C6,2 9,6 7,8 C5,10 2,8 0,5 Z" fill="#FF5E8F"/>
+    <circle cx="0" cy="0" r="3" fill="#FFCC00"/>
+  </g>
+</svg>

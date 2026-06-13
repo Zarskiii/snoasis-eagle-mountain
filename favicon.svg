@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="tikiBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38B9D1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06D6A0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="#F5EEE2" filter="url(#shadow)" />
+  
+  <!-- Graffiti-style Z filled with tiki blue gradient -->
+  <path d="M12,18 L52,18 C50,22 46,28 40,42 C38,48 34,54 32,58 L52,58 C50,62 48,64 48,64 L8,64 C10,58 13,52 18,40 C24,28 28,22 32,18 L10,18 C12,12 12,8 12,8 Z" transform="scale(0.70) translate(11, 5)" fill="url(#tikiBlueGradient)" filter="url(#shadow)"/>
+  
+  <!-- Decorative hibiscus flower -->
+  <circle cx="46" cy="18" r="7" fill="#EF476F" />
+  <path d="M44,12 Q46,8 48,12" stroke="#EF476F" stroke-width="2" fill="#EF476F" />
+  <path d="M41,14 Q36,11 40,10" stroke="#EF476F" stroke-width="2" fill="#EF476F" />
+  <path d="M41,22 Q36,25 40,26" stroke="#EF476F" stroke-width="2" fill="#EF476F" />
+  <path d="M51,22 Q56,25 52,26" stroke="#EF476F" stroke-width="2" fill="#EF476F" />
+  <path d="M51,14 Q56,11 52,10" stroke="#EF476F" stroke-width="2" fill="#EF476F" />
+  <circle cx="46" cy="18" r="2.5" fill="#FFD166" />
+</svg> 
