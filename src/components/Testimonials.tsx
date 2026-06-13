@@ -31,7 +31,7 @@ const Testimonials = () => {
             <div className="p-5 md:p-6">
               <p className="text-sm font-semibold uppercase tracking-[0.08em] text-tiki-blue">Review snapshot</p>
               <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
-                <p className="text-5xl font-black leading-none text-tiki-dark">{reviewStats.rating}</p>
+                <p className="text-4xl font-black leading-none text-tiki-dark md:text-5xl">{reviewStats.rating}/5 stars</p>
                 <div>
                   <div className="flex">
                     {[...Array(4)].map((_, index) => (
