@@ -18,23 +18,13 @@ const Hero = () => {
 
       <div className="container relative z-10 mx-auto px-4 pb-16 pt-16 md:pb-16 md:pt-16">
         <div className="max-w-3xl">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-md border border-white/25 bg-white/10 px-3 py-2 text-xs font-semibold backdrop-blur sm:text-sm">
-            <MapPin className="h-4 w-4 text-tiki-yellow" />
-            {business.address}
-          </div>
-
           <h1 className="mb-5 max-w-3xl text-5xl font-black leading-[0.98] sm:text-6xl md:text-7xl">
             <span className="block">Snoasis</span>
             <span className="block">Eagle Mountain</span>
             <span className="mt-4 block text-4xl text-tiki-yellow sm:text-5xl md:text-6xl">
-              Premium Shaved Ice &amp; Catering
+              Premium Shaved Ice <span className="whitespace-nowrap">&amp; Catering</span>
             </span>
           </h1>
-
-          <p className="mb-6 max-w-2xl text-base leading-7 text-white/90 md:mb-8 md:text-xl md:leading-8">
-            The Eagle Mountain shaved ice stop for soft ice, big flavor choices, cream add-ons,
-            and catering for local parties, schools, teams, and summer events.
-          </p>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link to="/catering">
@@ -54,6 +44,11 @@ const Hero = () => {
                 Directions
               </a>
             </TikiButton>
+          </div>
+
+          <div className="mt-5 inline-flex items-start gap-2 rounded-md border border-white/25 bg-white/10 px-3 py-2 text-sm font-semibold leading-6 backdrop-blur sm:text-base">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-tiki-yellow" />
+            {business.address}
           </div>
         </div>
       </div>
