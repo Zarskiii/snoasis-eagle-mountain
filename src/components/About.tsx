@@ -11,12 +11,12 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="relative">
-            <div className="mx-auto max-w-2xl rounded-lg shadow-xl ring-1 ring-tiki-blue/10 lg:max-w-[720px]">
+            <div className="mx-auto max-w-xs rounded-lg bg-white p-6 shadow-xl ring-1 ring-tiki-blue/10 sm:max-w-sm">
               <a href={business.yelpUrl} target="_blank" rel="noopener noreferrer" aria-label="Open Snoasis on Yelp">
                 <img
-                  src="/brand/snoasis-bright-logo-wide.png"
+                  src="/brand/snoasis-mark-circle.png"
                   alt="Snoasis world's greatest shaved ice logo"
-                  className="block h-auto w-full rounded-lg"
+                  className="block aspect-square h-auto w-full object-contain"
                 />
               </a>
             </div>
