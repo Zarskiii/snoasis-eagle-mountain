@@ -47,17 +47,17 @@ const Hero = () => {
 
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link to="/catering">
-              <TikiButton size="lg" className="w-full gap-2 bg-[#f23872] text-base shadow-lg shadow-tiki-dark/20 hover:bg-[#e82664] sm:w-auto">
+              <TikiButton size="lg" className="hero-button-translucent hero-button-pink w-full gap-2 text-base sm:w-auto">
                 <MessageSquareText className="h-5 w-5" />
                 Catering
               </TikiButton>
             </Link>
             <Link to="/menu">
-              <TikiButton size="lg" className="w-full bg-[#00c97a] text-base text-white shadow-lg shadow-tiki-dark/20 hover:bg-[#00ad69] sm:w-auto">
+              <TikiButton size="lg" className="hero-button-translucent hero-button-green w-full text-base text-white sm:w-auto">
                 View Menu
               </TikiButton>
             </Link>
-            <TikiButton asChild size="lg" variant="secondary" className="w-full gap-2 text-base sm:w-auto">
+            <TikiButton asChild size="lg" className="hero-button-translucent hero-button-yellow w-full gap-2 text-base text-tiki-dark sm:w-auto">
               <a href={business.mapUrl} target="_blank" rel="noopener noreferrer">
                 <Navigation className="h-5 w-5" />
                 Directions
