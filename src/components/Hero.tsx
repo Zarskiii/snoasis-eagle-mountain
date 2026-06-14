@@ -47,7 +47,7 @@ const Hero = () => {
 
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link to="/catering">
-              <TikiButton size="lg" className="w-full gap-2 bg-tiki-pink text-base hover:bg-tiki-pink/90 sm:w-auto">
+              <TikiButton size="lg" className="w-full gap-2 bg-[#f23872] text-base shadow-lg shadow-tiki-dark/20 hover:bg-[#e82664] sm:w-auto">
                 <MessageSquareText className="h-5 w-5" />
                 Catering
               </TikiButton>
