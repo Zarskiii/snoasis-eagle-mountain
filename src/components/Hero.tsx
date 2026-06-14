@@ -3,15 +3,34 @@ import { business } from "@/lib/business";
 import { MapPin, MessageSquareText, Navigation } from "lucide-react";
 import { Link } from "react-router-dom";
 
+const heroImages = [
+  {
+    src: "/images/o (1).jpg",
+    alt: "Snoasis shaved ice with cream",
+  },
+  {
+    src: "/images/snoasis-shack.jpg",
+    alt: "Snoasis shaved ice shack",
+  },
+  {
+    src: "/images/snoasis-landscape.jpg",
+    alt: "Customers gathered at the Snoasis shaved ice shack",
+  },
+];
+
 const Hero = () => {
   return (
     <section className="relative overflow-hidden pt-20 text-white md:min-h-[620px]">
       <div className="absolute inset-0 z-0">
-        <img
-          src="/images/o (1).jpg"
-          alt="Snoasis shaved ice with cream"
-          className="h-full w-full object-cover"
-        />
+        {heroImages.map((image, index) => (
+          <img
+            key={image.src}
+            src={image.src}
+            alt={image.alt}
+            className="hero-slide h-full w-full object-cover"
+            style={{ animationDelay: `${index * 5}s` }}
+          />
+        ))}
         <div className="absolute inset-0 bg-gradient-to-r from-tiki-dark/90 via-tiki-dark/68 to-tiki-dark/20" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
       </div>

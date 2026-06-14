@@ -122,7 +122,26 @@
   }
 }
 
+@keyframes hero-photo-fade {
+  0%, 28% {
+    opacity: 1;
+  }
+
+  35%, 93% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @layer utilities {
+  .hero-slide {
+    @apply absolute inset-0 opacity-0;
+    animation: hero-photo-fade 15s ease-in-out infinite;
+  }
+
   .request-catering-button {
     animation: request-catering-jiggle 4.8s ease-in-out infinite;
     transform-origin: center;
@@ -130,6 +149,14 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
+    .hero-slide {
+      animation: none;
+    }
+
+    .hero-slide:first-child {
+      opacity: 1;
+    }
+
     .request-catering-button {
       animation: none;
     }
