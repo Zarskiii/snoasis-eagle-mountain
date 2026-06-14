@@ -53,7 +53,7 @@ const Hero = () => {
               </TikiButton>
             </Link>
             <Link to="/menu">
-              <TikiButton size="lg" variant="outline" className="w-full border-white bg-white/10 text-base text-white hover:bg-white hover:text-tiki-dark sm:w-auto">
+              <TikiButton size="lg" className="w-full bg-[#00c97a] text-base text-white shadow-lg shadow-tiki-dark/20 hover:bg-[#00ad69] sm:w-auto">
                 View Menu
               </TikiButton>
             </Link>
