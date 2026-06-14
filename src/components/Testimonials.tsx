@@ -48,12 +48,14 @@ const Testimonials = () => {
                 Frequent mentions of cream add-ons and friendly service.
               </p>
 
-              <div className="mt-4 rounded-lg border border-tiki-yellow/60 bg-tiki-yellow/20 p-4">
-                <div className="flex items-start gap-3">
-                  <Gift className="mt-0.5 h-5 w-5 shrink-0 text-tiki-pink" />
+              <div className="mt-4 rounded-lg border-2 border-tiki-yellow bg-gradient-to-r from-tiki-yellow/95 to-white p-4 shadow-lg shadow-tiki-yellow/20">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-tiki-pink text-white shadow-md">
+                    <Gift className="h-5 w-5" />
+                  </div>
                   <div>
-                    <p className="font-black text-tiki-dark">Enjoy your treat?</p>
-                    <p className="mt-1 text-sm leading-5 text-gray-700">
+                    <p className="text-lg font-black leading-tight text-tiki-dark">Enjoy your treat?</p>
+                    <p className="mt-1 text-sm font-semibold leading-5 text-tiki-dark/85">
                       Ask the window attendant about a Sweet Milk or Cream topping thank-you, and feel free to share an honest review online.
                     </p>
                   </div>
