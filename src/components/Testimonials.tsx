@@ -48,9 +48,9 @@ const Testimonials = () => {
                 Frequent mentions of cream add-ons and friendly service.
               </p>
 
-              <div className="mt-4 rounded-lg border-2 border-tiki-yellow bg-gradient-to-r from-tiki-yellow/95 to-white p-4 shadow-lg shadow-tiki-yellow/20">
+              <div className="mt-4 rounded-lg border border-tiki-yellow/35 bg-tiki-yellow/10 p-4 shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-tiki-pink text-white shadow-md">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-tiki-pink/15 text-tiki-pink">
                     <Gift className="h-5 w-5" />
                   </div>
                   <div>
